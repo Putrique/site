@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Player</title>
+    <link rel="stylesheet" href="cat.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chat-Player</h1>
+            <div class="search-icon">🔍</div>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab active">Miau-vídeos</button>
+            <button class="tab">Miau-sicas</button>
+            <button class="tab">Chat-lists</button>
+            <button class="tab">Miau-astas</button>
+        </nav>
+
+        <section class="music-list" id="music-list">
+            <!-- Lista gerada pelo JS -->
+        </section>
+
+        <footer class="now-playing" id="now-playing">
+            <!-- Música atual gerada pelo JS -->
+        </footer>
+    </div>
+
+    <div class="player-screen hidden" id="player-screen">
+        <div class="back-arrow" id="back-arrow">⬇️</div>
+        <img id="player-image" alt="Imagem da música">
+        <div class="player-info">
+            <h2 id="player-title">Título</h2>
+            <p id="player-artist">Artista</p>
+        </div>
+        <div class="controls">
+            <span>⏮️</span>
+            <span id="play-btn">▶️</span>
+            <span>⏭️</span>
+        </div>
+        <input type="range" id="progress-bar" min="0" max="100" value="0">
+        <div class="music-description" id="music-description">
+            <!-- Letras geradas pelo JS -->
+        </div>
+    </div>
+
+    <script src="cat.js"></script>
+</body>
+</html>

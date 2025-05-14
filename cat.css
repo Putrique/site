@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #00b300, #00cc00);
+    color: #000;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tab {
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.music-list {
+    overflow-y: auto;
+    height: 65vh;
+}
+
+.music-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.music-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.music-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.now-playing {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #0099cc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.now-playing img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.player-screen {
+    background: linear-gradient(to bottom, #00b300, #00cc00);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-screen.hidden {
+    display: none;
+}
+
+.back-arrow {
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.player-info {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#player-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+#progress-bar {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.music-description {
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 200px;
+    text-align: left;
+}
